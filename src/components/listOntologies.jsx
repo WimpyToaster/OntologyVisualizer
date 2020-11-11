@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import {fusekiURL} from '../constants.js';
 import {Link} from 'react-router-dom';
+import biodata from '../biodata.png';
 
 
 
@@ -18,7 +19,7 @@ class ListOntologies extends Component {
     render() { 
         return ( 
             <div>    
-                <h1> BioData.pt Ontologies </h1>
+                <img src={biodata} alt="BioDataLogo" />
                 <br></br>    
                          
                 <table className="table table-striped" id="ontologyTable">
