@@ -13,6 +13,7 @@ class ListOntologies extends Component {
     componentDidMount(){
         this.getOntologiesNames();
     }
+
     
     render() { 
         return ( 
@@ -42,6 +43,8 @@ class ListOntologies extends Component {
     // Make GET request to Fuseki to get all the ontologies names and updates the ontologies state
     async getOntologiesNames () {
         const datasets = await axios.get(fusekiURL + '$/datasets');
+
+        this.setState({ontologies: []});
 
         for (var ele in datasets.data.datasets) {
             var value = datasets.data.datasets[ele]["ds.name"];
