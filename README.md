@@ -1,6 +1,6 @@
 # OntologyVisualizer
 
-The OntologyVisualizer aims to facilitate teh visualization of Ontologies present in a Fuseki Server.
+The OntologyVisualizer aims to facilitate the visualization of Ontologies present in a Fuseki Server.
 
 
 ## How to Run
